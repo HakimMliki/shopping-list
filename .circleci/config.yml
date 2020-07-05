@@ -21,6 +21,7 @@ jobs:
       - checkout
       - puppeteer-install
       - run: yarn
+      - run: yarn start
       - run: yarn e2e
 workflows:
     build-and-test:
