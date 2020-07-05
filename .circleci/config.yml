@@ -20,10 +20,8 @@ jobs:
     steps:
       - checkout
       - puppeteer-install
-      - node/with-cache:
-          steps:
-            - run: yarn
-            - run: yarn e2e
+      - run: yarn
+      - run: yarn e2e
 workflows:
     build-and-test:
       jobs:
