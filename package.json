@@ -14,11 +14,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "e2e": "npx codeceptjs run --steps",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "eslintIgnore": [
+    "*.e2e.js"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -30,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "codeceptjs": "^2.6.6",
+    "puppeteer": "^5.0.0"
   }
 }
