@@ -13,7 +13,7 @@ exports.config = {
       show: false,
       windowSize: '1200x900',
       chrome: {
-        args: ['--no-sandbox', '--window-size=1280,960'],
+        args: ['--no-sandbox', '–disable-setuid-sandbox', '--window-size=1280,960'],
         defaultViewport: null
       }
     }
