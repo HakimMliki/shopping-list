@@ -13,11 +13,6 @@ commands:
           libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates \
           fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 
-
-orbs:
-  node: circleci/node@1.1.6
-  puppeteer: threetreeslight/puppeteer@0.1.2
-  
 jobs:
   build:
     docker:
